@@ -13,4 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::post('signUp', 'AuthController@signUp');
+Route::post('signIn', 'Authcontroller@signIn');
+Route::get('getUser', 'AuthController@getUser');
+
 Route::any('{path?}', 'MainController@index')->where("path", ".+");
